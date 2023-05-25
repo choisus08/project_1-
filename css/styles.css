@@ -1,21 +1,24 @@
-/* * {
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@100;300;400&family=Mulish:wght@300;400&display=swap');
+</style>
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
  
-} */
+}
 
 
 body {
-  background-color: rgb(248, 246, 238);
+  background-color: rgb(191, 147, 108);
     
 }
 
 header {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: rgb(109, 81, 59)
+    color: white;
 }
 
 .container {
@@ -28,7 +31,7 @@ header {
 }
 
 .petals {
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
     display: block;
     object-fit: cover;
@@ -37,9 +40,6 @@ header {
 
 .left{
     display: block;
+    width: 40vw;
     text-align: center;
-}
-
-.left {
-    margin-right: 17px;
 }
