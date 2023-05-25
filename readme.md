@@ -5,7 +5,7 @@ by Susie Gordon
 This is an interactive application that provides a list of makeup products with their description based on the user's search by a specific name brand or product type.
 
 ### **API Description**
--What is your api? Bandsintown API
+Makeup API provides an extensive range of makeup products with individual descriptions and their intended uses.
 
 -Example code of you testing it
 
@@ -14,6 +14,7 @@ This is an interactive application that provides a list of makeup products with 
 -CSS
 -JavaScript
 -jQuery
+-Google Fonts
 
 ```js
 
@@ -24,7 +25,7 @@ $.ajax(url)
 
 ### **Mockup**
 
-![Mockup Image]()
+![Mockup Image](./img/mockup.png)
 
 
 ### **Details about Difficulties**
