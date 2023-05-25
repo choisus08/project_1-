@@ -7,8 +7,6 @@ by Susie Gordon
 
 ---
 
-</br>
-
 Beauty Catalog is an interactive application that provides a list of makeup products with their description based on the user's search by a specific name brand or product type.
 
 </br>
@@ -16,8 +14,6 @@ Beauty Catalog is an interactive application that provides a list of makeup prod
 ### **API Description**
 
 ---
-
-</br>
 
 Makeup API provides an extensive range of makeup products with individual descriptions and their intended uses.
 
@@ -28,8 +24,6 @@ Makeup API provides an extensive range of makeup products with individual descri
 ### **Technologies Used**
 
 ---
-
-</br>
 
 - HTML
 - CSS
@@ -42,8 +36,6 @@ Makeup API provides an extensive range of makeup products with individual descri
 ### **API Call Method**
 
 ---
-
-</br>
 
 ```js
 
@@ -73,8 +65,6 @@ $.ajax('url')
 ### **Daily Schedule**
 
 ---
-
-</br>
 
 |  Day  |  Task  |
 |-------|--------|
