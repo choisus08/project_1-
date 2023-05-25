@@ -7,24 +7,25 @@ $searchForm.on("submit", event => {
     const formData = new FormData(event.target)
     console.log(formData);
 
-    // input can use upper or lowercase
+    // user's input style doesn't affect the search
     const searchInput = formData.get("search input").toLowerCase();
 
-    // link makeupInput search to url
-    const url = `https://makeup-api.herokuapp.com/api/v1/products.json${searchInput}`
+    // link searchInput to url + brand name
+    const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchInput}`
 
-    $.ajax('https://makeup-api.herokuapp.com/api/v1/products.json')
+    $.ajax(url)
     .then((data) => {
         console.log(data);
-        console.log(data[0].brand)
-        // retrieve brand, name, description, category & img_link
-        // use .filter()
-        // data.filter((item) => {})
-        
-    
+        console.log(data.filter((item, index) => {
+            console.log(index, item);
+            console.log({brand: item.brand, name: item.name, description: item.description, 
+                        category: item.cateogry, image: item.image_link});
+        }))
     })  
-})
+});
 
+// function to display product info
+render(brandInfo)
 
 
 

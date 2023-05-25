@@ -29,7 +29,6 @@ Makeup API provides an extensive range of makeup products with individual descri
 - CSS
 - JavaScript
 - jQuery
-- Google Fonts
 
 </br>
 
