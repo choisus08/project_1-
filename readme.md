@@ -1,12 +1,19 @@
 # Project 1
 by Susie Gordon
 
-### Project Description
-Create an interactive page where the user can input a value specific to a form and retrieve information based on that form description.
+### **Project Description**
+This is an interactive application that provides a list of makeup products with their description based on the user's search by a specific name brand or product type.
 
-### API Description
--What is your api?
+### **API Description**
+-What is your api? Bandsintown API
+
 -Example code of you testing it
+
+### **Technologies Used**
+-HTML
+-CSS
+-JavaScript
+-jQuery
 
 ```js
 
@@ -15,14 +22,15 @@ $.ajax(url)
 
 ```
 
-### Mockup
+### **Mockup**
 
 ![Mockup Image]()
 
 
-### Details about Difficulties
+### **Details about Difficulties**
 
-### Daily Schedule
+
+### **Daily Schedule**
 
 |  Day  |  Task  |
 |-------|--------|
