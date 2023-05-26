@@ -80,3 +80,14 @@ $.ajax('url')
 ---
 
 [Click here](https://project-1-fawn.vercel.app/) to use the app!
+
+</br>
+
+### **Resources**
+
+---
+
+- [Class Bonus Cheatsheets](https://git.generalassemb.ly/AlexMerced/orientation/blob/master/cheatsheet/readme.md) 
+- [Google Fonts](https://fonts.google.com/)
+- [Mozilla](https://developer.mozilla.org/)
+- [W3 Schools](https://www.w3schools.com/)

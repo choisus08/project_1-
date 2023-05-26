@@ -32,10 +32,37 @@ header {
     display: block;
     object-fit: cover;
     object-position: center;
+
 }
 
 .left{
     display: block;
     width: 40vw;
     text-align: center;
+}
+
+.right {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.results {
+    position: absolute;
+    margin: 50px;
+}
+
+input {
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+}
+
+.search {
+    padding: 3px;
+}
+
+.submit {
+    background-color: white;
+    padding: 3px;
 }
