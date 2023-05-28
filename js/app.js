@@ -17,6 +17,7 @@ $searchForm.on('submit', event => {
     const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchInput}`
 
     const $results = $(".results")
+    const $ul = $("ul")
 
     $.ajax(url)
     .then((data) => {
@@ -25,47 +26,53 @@ $searchForm.on('submit', event => {
             console.log(index, item);
             console.log({brand: item.brand, name: item.name, description: item.description, 
                         category: item.cateogry, image: item.image_link});
-        }));
-            $results.html(`
-            <div>
-                ${item.image_link}
+        
+            $results.append($ul).html(`
+            <img class="product_pic" src=${item.image_link}>
+            <div class="info">
+                <div>
+                    <b>Brand:</b> ${item.brand}
+                </div>
+                <div>
+                    <b>Product:</b> ${item.name}
+                </div>
+                <div>
+                    <b>Description:</b> ${item.description}
+                </div>
             </div>
-            <div>
-                <b>${item.brand}</b>
+
+            <img class="product_pic" src=${item.image_link}>
+            <div class="info">
+                <div>
+                    <b>Brand:</b> ${item.brand}
+                </div>
+                <div>
+                    <b>Product:</b> ${item.name}
+                </div>
+                <div>
+                    <b>Description:</b> ${item.description}
+                </div>
             </div>
-            <div>
-                ${item.name}
+            
+            <img class="product_pic" src=${item.image_link}>
+            <div class="info">
+                <div>
+                    <b>Brand:</b> ${item.brand}
+                </div>
+                <div>
+                    <b>Product:</b> ${item.name}
+                </div>
+                <div>
+                    <b>Description:</b> ${item.description}
+                </div>
             </div>
-            <div>
-                ${item.description}
-            </div>
+    
         `)
-     })  
-    .fail(() => {
-        $results.html(`<div> there was an error...</div>`)
-    })
+    }));
+    })  
 });
 
 
-
-// $results.html(`
-// <div>
-//     ${item.image_link}
-// </div>
-// <div>
-//     <b>${item.brand}</b>
-// </div>
-// <div>
-//     ${item.name}
-// </div>
-// <div>
-//     ${item.description}
-// </div>
-// `)
-// })  
-// .fail(() => {
-// $results.html(`<div> there was an error...</div>`)
-// })
 
 
 

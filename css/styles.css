@@ -58,11 +58,28 @@ input {
     margin: 10px auto;
 }
 
-.search {
-    padding: 3px;
+.search, .submit {
+    padding: 4px;
 }
 
 .submit {
     background-color: white;
-    padding: 3px;
+
+}
+
+.results {
+    display: block;
+    text-transform: capitalize;
+    
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.product_pic {
+    margin: auto;
+    /* float: left; */
+    
 }
