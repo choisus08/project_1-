@@ -17,74 +17,39 @@ $searchForm.on('submit', event => {
     const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchInput}`
 
     const $results = $(".results")
-    const $ul = $("ul")
+    const $ul = $("ul.list")
+
 
     $.ajax(url)
     .then((data) => {
-        console.log(data);
-        console.log(data.filter((item, index) => {
-            console.log(index, item);
-            console.log({brand: item.brand, name: item.name, description: item.description, 
-                        category: item.cateogry, image: item.image_link});
+        // console.log("hey it's here");
+        console.log(data.length)
+        let str = ""; 
+        for (let i=0; i<data.length; i++) {
+            // const item = data[i]
+            // console.log(item, item.name, item.image_link)
+            const item = data[i];
+           str += `
+<li>
+    <img class="product_pic" src="${item.image_link}"/>
+    <div class="info">
+       <div>
+           <b>Brand:</b> ${item.brand}
+         </div>
+        <div>
+             <b>Product:</b> ${item.name}
+         </div>
+         <div>
+           <b>Description:</b> ${item.description}
+        </div>
+     </div>
+</li>
+`;
+             
+        }
+        // console.log(str);
+        $ul.html(str)
 
-            // use .filter() to extract img, brand, product, description
-                
+    });
 
-            $results.html(`
-            <div class="contents">
-                <img class="product_pic" src=${item.image_link}>
-                <div class="info">
-                    <div>
-                        <b>Brand:</b> ${item.brand}
-                    </div>
-                    <div>
-                        <b>Product:</b> ${item.name}
-                    </div>
-                    <div>
-                        <b>Description:</b> ${item.description}
-                    </div>
-                </div>
-            </div>
-
-            <div class="contents">
-                <img class="product_pic" src=${item.image_link}>
-                <div class="info">
-                    <div>
-                        <b>Brand:</b> ${item.brand}
-                    </div>
-                    <div>
-                        <b>Product:</b> ${item.name}
-                    </div>
-                    <div>
-                        <b>Description:</b> ${item.description}
-                    </div>
-                </div>
-            </div>
-
-            <div class="contents">
-                <img class="product_pic" src=${item.image_link}>
-                <div class="info">
-                    <div>
-                        <b>Brand:</b> ${item.brand}
-                    </div>
-                    <div>
-                        <b>Product:</b> ${item.name}
-                    </div>
-                    <div>
-                        <b>Description:</b> ${item.description}
-                    </div>
-                </div>
-            </div>
-        `)
-    }));
-    })  
 });
-
-
-
-
-
-// results:
-// Display product that includes: brand, img_link, name & description
-
-// function to display product info
