@@ -26,47 +26,55 @@ $searchForm.on('submit', event => {
             console.log(index, item);
             console.log({brand: item.brand, name: item.name, description: item.description, 
                         category: item.cateogry, image: item.image_link});
-        
-            $results.append($ul).html(`
-            <img class="product_pic" src=${item.image_link}>
-            <div class="info">
-                <div>
-                    <b>Brand:</b> ${item.brand}
-                </div>
-                <div>
-                    <b>Product:</b> ${item.name}
-                </div>
-                <div>
-                    <b>Description:</b> ${item.description}
+
+            // use .filter() to extract img, brand, product, description
+                
+
+            $results.html(`
+            <div class="contents">
+                <img class="product_pic" src=${item.image_link}>
+                <div class="info">
+                    <div>
+                        <b>Brand:</b> ${item.brand}
+                    </div>
+                    <div>
+                        <b>Product:</b> ${item.name}
+                    </div>
+                    <div>
+                        <b>Description:</b> ${item.description}
+                    </div>
                 </div>
             </div>
 
-            <img class="product_pic" src=${item.image_link}>
-            <div class="info">
-                <div>
-                    <b>Brand:</b> ${item.brand}
-                </div>
-                <div>
-                    <b>Product:</b> ${item.name}
-                </div>
-                <div>
-                    <b>Description:</b> ${item.description}
-                </div>
-            </div>
-            
-            <img class="product_pic" src=${item.image_link}>
-            <div class="info">
-                <div>
-                    <b>Brand:</b> ${item.brand}
-                </div>
-                <div>
-                    <b>Product:</b> ${item.name}
-                </div>
-                <div>
-                    <b>Description:</b> ${item.description}
+            <div class="contents">
+                <img class="product_pic" src=${item.image_link}>
+                <div class="info">
+                    <div>
+                        <b>Brand:</b> ${item.brand}
+                    </div>
+                    <div>
+                        <b>Product:</b> ${item.name}
+                    </div>
+                    <div>
+                        <b>Description:</b> ${item.description}
+                    </div>
                 </div>
             </div>
-    
+
+            <div class="contents">
+                <img class="product_pic" src=${item.image_link}>
+                <div class="info">
+                    <div>
+                        <b>Brand:</b> ${item.brand}
+                    </div>
+                    <div>
+                        <b>Product:</b> ${item.name}
+                    </div>
+                    <div>
+                        <b>Description:</b> ${item.description}
+                    </div>
+                </div>
+            </div>
         `)
     }));
     })  
