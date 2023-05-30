@@ -109,8 +109,7 @@ li {
     float: left;
     height: auto;
     width: 200px;
-    /* width:  200px;
-    height: 200px;
-    object-fit: scale-down; */
+    background-color: white;
+    border-radius: 20px;
     
 }
