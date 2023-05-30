@@ -22,7 +22,6 @@ $searchForm.on('submit', event => {
 
     $.ajax(url)
     .then((data) => {
-        // console.log("hey it's here");
         console.log(data.length)
         let str = ""; 
         for (let i=0; i<data.length; i++) {

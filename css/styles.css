@@ -6,15 +6,45 @@
 }
 
 
-body {
+/* body {
   background-color: rgb(191, 147, 108);
+    
+} */
+
+
+.left{
+    width: 40vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.foundation {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
     
 }
 
-header {
+h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+
+form {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 55%
+    
+
 }
 
 .container {
@@ -24,22 +54,6 @@ header {
     align-items: center;
     justify-content: center;
    
-}
-
-.petals {
-    /* width: 60vw;
-    height: 100vh;
-    display: block;
-    object-fit: cover;
-    object-position: center; */
-
-}
-
-.left{
-    display: block;
-    width: 40vw;
-    text-align: center;
-
 }
 
 input {
@@ -65,7 +79,7 @@ input {
     justify-content: flex-start;
     background-image: url(../img/babys_breath.png);
     background-size: auto 100vh;
-    background-position: -40vw 0;
+    background-position: -35vw 0;
     background-repeat: no-repeat;
     overflow: scroll;
     width: 60vw;
@@ -80,6 +94,7 @@ input {
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     
 }
 
@@ -101,8 +116,7 @@ li {
     overflow: hidden;
     display: grid;
     gap: .3em;
-    
-    
+ 
 }
 
 .product_pic {
@@ -111,5 +125,5 @@ li {
     width: 200px;
     background-color: white;
     border-radius: 20px;
-    
+    border: 3px solid rgba(135, 61, 41, 0.733);
 }
