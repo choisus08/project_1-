@@ -27,7 +27,7 @@ $searchForm.on('submit', event => {
         let str = ""; 
         for (let i=0; i<data.length; i++) {
             // const item = data[i]
-            // console.log(item, item.name, item.image_link)
+            // console.log(item, item.name, item.brand, item.image_link)
             const item = data[i];
            str += `
 <li>
