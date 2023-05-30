@@ -34,7 +34,7 @@ h1 {
     position: absolute;
     width: 100%;
     margin: auto;
-    
+    top: 40%; 
     
 }
 
@@ -42,9 +42,7 @@ form {
     position: absolute;
     width: 100%;
     margin: auto;
-    top: 55%
-    
-
+    top: 60%%;
 }
 
 .container {
@@ -57,19 +55,28 @@ form {
 }
 
 input {
-    border-radius: 25px;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px auto;
+    padding: 5px;
+    cursor: pointer;
+   
 
 }
 
 .search, .submit {
-    padding: 4px;
+    border: 1px solid black;
 
 }
 
 .submit {
-    background-color: white;
+    background-color: saddlebrown;
+    color: white;
+    &:hover {
+        color: black;
+        background-color: rgb(198, 135, 83);
+
+    }
 
 }
 
