@@ -28,9 +28,13 @@ $searchForm.on('submit', event => {
             // const item = data[i]
             // console.log(item, item.name, item.brand, item.image_link)
             const item = data[i];
+
+          
+            // onerror notes...
+
            str += `
 <li>
-    <img class="product_pic" src="${item.image_link}"/>
+<img class="product_pic" src=${item.image_link} alt="Image not found" onerror="this.onerror=null;this.src='../img/error_img.png';" />
     <div class="info">
        <div>
            <b>Brand:</b> ${item.brand}
