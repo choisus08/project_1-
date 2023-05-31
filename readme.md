@@ -15,7 +15,7 @@ Beauty Catalog is an interactive application that provides a list of makeup prod
 
 ---
 
-Makeup API provides an extensive range of makeup products with individual descriptions and their intended uses.
+Makeup API provides an extensive range of makeup products with individual descriptions and intended uses.
 
 -Example code of you testing it
 
@@ -55,9 +55,16 @@ $.ajax('url')
 
 </br>
 
-### **Details about Difficulties**
+### **Difficulties & Problem Solving**
 
 ---
+
+</br>
+
+- Rendering the product search onto the browser
+- Creating the app to be responsive across a multitude of devices
+
+- I collaborated with a fellow cohort student to resolve the rendering of the actual searches. We used a similar skeleton for our code in order to achieve this goal.
 
 </br>
 
