@@ -13,6 +13,11 @@ $searchForm.on('submit', event => {
     // empty out the input between searches
     $("[name='search input']")[0].value = "";
 
+    // scroll back to top between searches
+    const $scrollTop = $(".right")
+    $scrollTop.animate({scrollTop:0}, 'fast');
+
+
     // link searchInput to url + brand name
     const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchInput}`
 
@@ -37,21 +42,20 @@ $searchForm.on('submit', event => {
     <img class="product_pic" src=${item.image_link} alt="Image not found" onerror="this.onerror=null;this.src='../img/error_img.png';" />
     <div class="info">
        <div>
-           <b>Brand:</b> ${item.brand}
+           <span class="brand"><b>Brand:</b></span> ${item.brand}
          </div>
         <div>
-             <b>Product:</b> ${item.name}
+        <span class="product"><b>Product:</b></span> ${item.name}
          </div>
          <div>
-           <b>Description:</b> ${item.description}
+         <span class="description"><b>Description:</b></span> ${item.description}
         </div>
      </div>
 </li>
-`;
-             
+`;  
         }
         // console.log(str);
-        // attach str to <ul</ul> tag
+        // attach str to <ul></ul> tag
         $ul.html(str)
 
     });

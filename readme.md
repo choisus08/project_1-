@@ -36,7 +36,7 @@ Makeup API provides an extensive range of makeup products with individual descri
 - CSS
 - JavaScript
 - jQuery
-- (site API source)
+- Makeup API
 - Google Fonts
 
 </br>
@@ -78,10 +78,16 @@ $.ajax('url')
 
 ---
 
+**Problem 1:** 
+Rendering a placeholder image for broken images provided by the API 
 </br>
+**Solution 1:** 
+Used onerror method....
 
-- Rendering the a placeholder image for broken images provided by the API -> use onerror method....
-- Creating the app to be responsive across a various devices -> .....
+**Problem 2:** 
+Creating the app to be responsive across a various devices
+</br>
+**Solution 2:**
 
 </br>
 

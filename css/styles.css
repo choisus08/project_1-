@@ -33,7 +33,7 @@
 
 .main_input {
     position: absolute;
-    top: 43%;
+    top: 44%;
     display: grid;
     grid-template-rows: auto;
     gap: 1rem;
@@ -108,12 +108,13 @@ input {
     text-transform: capitalize;
     font-size: 15px;
     font-family: 'Urbanist', sans-serif;
+    color: white;
 }
 
 .list {
     display: grid;
     grid-template-rows: auto;
-    gap: 3em;
+    gap: 3rem;
     
 }
 
@@ -125,10 +126,19 @@ li {
 
 .info   {
     position: relative;
-    left: 2em;
+    left: 2rem;
     overflow: hidden;
     display: grid;
-    gap: .5em;
+    gap: .5rem;
+    border: 2px solid rgba(81, 28, 14, 0.733);
+    background-color: rgb(192, 167, 150);
+    border-radius: 20px;
+    padding: 2%;
+   
+}
+
+.brand, .product, .description {
+    color:rgba(81, 28, 14, 0.733)
 }
 
 .product_pic {
@@ -170,11 +180,6 @@ li {
             background-position: center;
             width: 100%
              
-        }
-
-        .product_pic {
-            width: 8rem;
-    
         }
 
         .results {
