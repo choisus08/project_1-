@@ -137,8 +137,14 @@ li {
     background-color: white;
     border-radius: 20px;
     border: 3px solid rgba(135, 61, 41, 0.733);
+    &:hover {
+        transform: scale(1.1);
+        transition: .2s ease;
+    }
 
 }
+
+
 
 @media screen and (max-width: 600px) {
         h1 {
