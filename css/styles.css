@@ -92,11 +92,8 @@ input {
     display: flex;
     position: relative;
     justify-content: flex-start;
-    /* background-image: url(../img/babys_breath.png);
-    background-size: auto 100vh; */
     background-image: url(../img/brushes.png);
     background-size: cover;
-    /* background-position: -30vw 0; */
     background-repeat: no-repeat;
     overflow: auto;
     width: 60vw;
@@ -109,19 +106,20 @@ input {
     position: absolute;
     margin: 30px 50px;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Urbanist', sans-serif;
 }
 
 .list {
     display: grid;
     grid-template-rows: auto;
-    gap: 2em;
+    gap: 3em;
     
 }
 
 li {
     list-style-type: none;
+
     
 }
 
@@ -131,17 +129,14 @@ li {
     overflow: hidden;
     display: grid;
     gap: .5em;
- 
 }
 
 .product_pic {
     float: left;
     height: auto;
-    /* width: 200px; */
     width: 10rem;
-    background-color: white;
     border-radius: 20px;
-    border: 3px solid rgba(135, 61, 41, 0.733);
+    border: 3px solid rgba(81, 28, 14, 0.733);
     &:hover {
         transform: scale(1.1);
         transition: .1s ease;
@@ -167,17 +162,22 @@ li {
             
         }
 
-        .product_pic {
-            width: 8rem
+        .left {
+            width: 85%
         }
 
-        .left{
-            width: 11em 
-        }
         .right {
-            background-image: url(../img/brushes.png);
-            background-size: 
-            
-            
+            background-position: center;
+            width: 100%
+             
+        }
+
+        .product_pic {
+            width: 8rem;
+    
+        }
+
+        .results {
+            margin: 25px 40px
         }
 }
