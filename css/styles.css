@@ -5,13 +5,32 @@
  
 }
 
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
 
 .left{
     width: 40vw;
-    align-items: center;
     text-align: center;
-    display: flex;
     position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_input {
+    position: absolute;
+    top: 43%;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
 
 }
 
@@ -26,28 +45,16 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
-    position: absolute;
     width: 100%;
     margin: auto;
     top: 40%; 
-    
+
 }
 
 form {
-    position: absolute;
     width: 100%;
     margin: auto;
-    top: 60%%;
-}
-
-.container {
-    min-height: 100vh;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
+    bottom: 45%;
 }
 
 input {
@@ -131,6 +138,14 @@ li {
     border-radius: 20px;
     border: 3px solid rgba(135, 61, 41, 0.733);
 
- /* add for error img replacement
- */
+}
+
+@media screen and (max-width: 600px) {
+        h1 {
+            font-size: 20px;
+        }
+        form {
+            width: 100%;
+            margin: auto;
+        }
 }

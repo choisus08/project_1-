@@ -16,22 +16,22 @@ $searchForm.on('submit', event => {
     // link searchInput to url + brand name
     const url = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${searchInput}`
 
-    const $results = $(".results")
     const $ul = $("ul.list")
 
 
     $.ajax(url)
     .then((data) => {
         console.log(data.length)
+        // create variable that will render the data after passing as a parameter
         let str = ""; 
+        // loop through data (array) to console.log targeted objects at index [i]
         for (let i=0; i<data.length; i++) {
-            // const item = data[i]
             // console.log(item, item.name, item.brand, item.image_link)
             const item = data[i];
 
           
-            // onerror notes...
-
+            // onerror executes when uncaught js errors are detected 
+            // add data rendering to str
            str += `
 <li>
 <img class="product_pic" src=${item.image_link} alt="Image not found" onerror="this.onerror=null;this.src='../img/error_img.png';" />
@@ -51,6 +51,7 @@ $searchForm.on('submit', event => {
              
         }
         // console.log(str);
+        // attach str to <ul</ul> tag
         $ul.html(str)
 
     });

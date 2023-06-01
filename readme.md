@@ -3,7 +3,7 @@ by Susie Gordon
 
 </br>
 
-### **Project Description**
+### **Project Overview**
 
 ---
 
@@ -11,13 +11,20 @@ Beauty Catalog is an interactive application that allows the user to search for 
 
 </br>
 
+### **Deployed App** 
+
+---
+
+[Click here](https://project-1-fawn.vercel.app/) to use the app!
+
+</br>
+
 ### **API Description**
 
 ---
 
-Makeup API provides an extensive range of makeup products with individual descriptions and intended uses.
+Makeup API provides an extensive range of makeup products with individual descriptions.
 
--Example code of you testing it
 
 </br>
 
@@ -29,6 +36,7 @@ Makeup API provides an extensive range of makeup products with individual descri
 - CSS
 - JavaScript
 - jQuery
+- (site API source)
 
 </br>
 
@@ -55,7 +63,7 @@ $.ajax('url')
 
 </br>
 
-### **Mockup**
+### **Mockup & Screenshot**
 
 ---
 
@@ -71,10 +79,8 @@ $.ajax('url')
 
 </br>
 
-- Rendering the product search onto the browser
-- Creating the app to be responsive across a multitude of devices
-
-- I collaborated with a fellow cohort student to resolve the rendering of the actual searches. We used a similar code structure in order to achieve this.
+- Rendering the a placeholder image for broken images provided by the API -> use onerror method....
+- Creating the app to be responsive across a various devices -> .....
 
 </br>
 
@@ -89,14 +95,6 @@ $.ajax('url')
 | 3 | Render data to the page |
 | 4 | Add user interactivity (form) |
 | 5 | Styling |
-
-</br>
-
-### **Deployed App** 
-
----
-
-[Click here](https://project-1-fawn.vercel.app/) to use the app!
 
 </br>
 
