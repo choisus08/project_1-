@@ -68,8 +68,6 @@ $.ajax('url')
 
 ---
 
-</br>
-
 Mockup
 
 ![Mockup Image](./img/mockup.png)
