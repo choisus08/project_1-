@@ -7,7 +7,7 @@ by Susie Gordon
 
 ---
 
-Beauty Catalog is an interactive application that allows the user to search for makeup products based on the brand name. The results will provide a list of products along with information on their intended uses.
+Beauty Catalog is an interactive application that allows the user to search for makeup products based on the brand name. The results will provide a list of products along with corresponding information about their intended uses.
 
 </br>
 
@@ -70,7 +70,15 @@ $.ajax('url')
 
 </br>
 
+Mockup
+
 ![Mockup Image](./img/mockup.png)
+
+</br>
+
+Final Result
+
+![Final Screenshot](./img/final_screenshot.png)
 
 </br>
 
@@ -79,15 +87,16 @@ $.ajax('url')
 ---
 
 **Problem 1:** 
-Rendering a placeholder image for broken images provided by the API 
+Rendering a placeholder image for broken images provided by the API. 
 </br>
 **Solution 1:** 
-Used onerror method....
+Utilized the `onerror` event to overhaul errors provided by the API. This case specifically corrects broken images by replacing them with another chosen image.
 
 **Problem 2:** 
-Creating the app to be responsive across a various devices
+Creating the app to be responsive.
 </br>
 **Solution 2:**
+Applied media query properties to targeted elements and adjusted them to desired settings. 
 
 </br>
 
