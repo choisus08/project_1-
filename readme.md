@@ -7,7 +7,7 @@ by Susie Gordon
 
 ---
 
-Beauty Catalog is an interactive application that allows the user to search for makeup products based on the brand name. The results will provide a list of products along with corresponding information about their intended uses.
+Beauty Catalog is an interactive application that allows the user to search for makeup products based on brand name. The results will provide a list of products along with corresponding information about their intended uses.
 
 </br>
 
