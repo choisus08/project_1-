@@ -37,6 +37,7 @@ $searchForm.on('submit', event => {
           
             // onerror executes when uncaught js errors are detected 
             // add data rendering to str
+        
            str += `
 <li>
     <img class="product_pic" src=${item.image_link} alt="Image not found" onerror="this.onerror=null;this.src='../img/error_img.png';" />
