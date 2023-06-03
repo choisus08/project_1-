@@ -117,5 +117,5 @@ Applied media query properties to targeted elements and adjusted them to desired
 ---
 
 - [Class Bonus Cheatsheets](https://git.generalassemb.ly/AlexMerced/orientation/blob/master/cheatsheet/readme.md) 
-- [Mozilla](https://developer.mozilla.org/)
+- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/)
 - [W3 Schools](https://www.w3schools.com/)
